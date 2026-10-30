@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+    <label class="sr-only" for="display">Calculator display</label>
+    <input id="display" class="display" type="text" value="" readonly aria-live="polite">
+
+    <div class="keys">
+      <button class="key number" data-value="7">7</button>
+      <button class="key number" data-value="8">8</button>
+      <button class="key number" data-value="9">9</button>
+      <button class="key operator" data-value="+">+</button>
+
+      <button class="key number" data-value="4">4</button>
+      <button class="key number" data-value="5">5</button>
+      <button class="key number" data-value="6">6</button>
+      <button class="key operator" data-value="-">-</button>
+
+      <button class="key number" data-value="1">1</button>
+      <button class="key number" data-value="2">2</button>
+      <button class="key number" data-value="3">3</button>
+      <button class="key operator" data-value="*">x</button>
+
+      <button class="key clear" data-action="clear">C</button>
+      <button class="key number" data-value="0">0</button>
+      <button class="key equals" data-action="equals">=</button>
+      <button class="key operator" data-value="/">/</button>
+    </div>
+  </main>
+</body>
+</html>
